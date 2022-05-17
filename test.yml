@@ -1,0 +1,9 @@
+---
+- name: script
+  hosts: target
+  tasks:
+          - name: Sctipts
+            shell: User=$(cat /etc/passwd | grep -i shan | cut -c '1-4'); if [[ -z "$User" ]]; then echo $User; else echo $User; fi 
+            ignore_errors: true
+            register: Users
+          - debug: msg="User Name is {{ Users.stdout }}"

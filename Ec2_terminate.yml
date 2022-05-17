@@ -1,0 +1,10 @@
+- name: Terminate instances
+  hosts: localhost
+  tasks:
+    - name: Terminate instances that were previously launched
+      ec2:
+        state: 'absent'
+        instance_ids: i-023e6a7aee66e53b7
+        aws_access_key: AKIA2TKNHWGML7ZS22YQ
+        aws_secret_key: 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
+        region: eu-central-1

@@ -1,0 +1,14 @@
+- name: Install EC2 instance
+  hosts: localhost
+  tasks:
+     - name: Launch EC2 Instance
+       ec2:
+         key_name: EC2
+         instance_type: t2.micro
+         image: ami-058e6df85cfc7760b
+         region: eu-central-1
+         wait: yes
+         group: launch-wizard-5 
+         count: 1
+         vpc_subnet_id: subnet-43187929 
+         assign_public_ip: yes

@@ -1,0 +1,14 @@
+---
+# tasks file for ec2
+- name: Launch EC2 Instance
+  ec2:
+     key_name: "{{ ec2_key_name }}" 
+     instance_type: "{{ ec2_instance_type }}" 
+     image: "{{ ec2_image }}" 
+     region: "{{ ec2_region }}"
+     wait: yes
+     group: "{{ ec2_group }}" 
+     count: "{{ ec2_count }}" 
+     vpc_subnet_id: "{{ ec2_vpc_subnet_id }}" 
+     assign_public_ip: yes
+

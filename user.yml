@@ -1,0 +1,21 @@
+---
+- name: Create user
+  hosts: target
+  tasks:
+          - name: Create a user
+            user:
+                    name: devops
+                    comment: DevOps user
+                    uid: 1024
+                    group: admin
+
+          - name: Copy ssh Keys 
+            authorized_key:
+                    user: devops
+                    state: present
+                    key: "{{ lookup('file', '/home/ec2-user/.ssh/id_rsa.pub') }}"
+
+
+
+
+

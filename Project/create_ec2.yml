@@ -1,0 +1,6 @@
+---
+- hosts: target
+  tasks:
+        - name: Create EC2 Instance
+          include_role:
+                  name: ec2

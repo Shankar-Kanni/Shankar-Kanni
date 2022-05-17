@@ -1,0 +1,10 @@
+---
+- name: Shankar Test
+  hosts: target
+  tasks:
+          - name: Shankar test
+            shell: echo $SHELL
+            register: user
+            become: yes
+            become_user: shankar
+          - debug: msg="{{ user.stdout }}"

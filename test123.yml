@@ -1,0 +1,13 @@
+---
+- name: TEST
+  hosts: target
+  tasks:
+          - name: test
+            shell: User=$(cat /etc/passwd | grep -i shan | cut -c '1-4'); echo $User
+            register: user
+          - debug: msg="{{ user.stdout }}"
+          - name: Execute script
+            become: yes
+            become_method: sudo
+            become_user: "{{ user.stdout }}" 
+            command: touch /tmp/shankaar.txt

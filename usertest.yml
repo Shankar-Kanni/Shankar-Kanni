@@ -1,0 +1,8 @@
+---
+- name: User test
+  hosts: target
+  tasks:
+          - name: create a file
+            shell: cd $HOME; touch dsusahdus.txt
+            become: true
+            become_user: shan

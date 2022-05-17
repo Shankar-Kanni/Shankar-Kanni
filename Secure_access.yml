@@ -1,0 +1,14 @@
+---
+- name: secure access
+  hosts: myec2
+  tasks:
+          - name: create user
+            user:
+                    name: devops
+                    state: present
+
+          - name: Copy ssh key
+            authorized_key:
+                    user: devops
+                    state: present
+                    key: "{{ lookup('file', '/home/ec2-user/.ssh/id_rsa.pub') }}"

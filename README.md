@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @Shankar-Kanni
 - 👀 I’m interested in learning devops
-- 🌱 I’m currently learning openshift
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 🌱 I’m currently learning openshift/github actions
+- 💞️ I’m looking to collaborate on learning github actions
+- 📫 How to reach me shankar
 
 <!---
 Shankar-Kanni/Shankar-Kanni is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

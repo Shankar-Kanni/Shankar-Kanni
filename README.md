@@ -1,3 +1,5 @@
+![](https://komarev.com/ghpvc/?username=Shankar-Kanni&color=green)
+
 - 👋 Hi, I’m @Shankar-Kanni
 - 👀 I’m interested in learning devops
 - 🌱 I’m currently learning openshift/github actions

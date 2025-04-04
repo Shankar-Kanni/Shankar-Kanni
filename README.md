@@ -2,7 +2,7 @@
 
 - 👋 Hi, I’m **Shankar Kanni**
 - 👀 I’m interested in learning devops
-- 🌱 I’m currently learning Openshift/Terraform/Github actions
+- 🌱 I’m currently working on Openshift/Terraform/Github actions
 - 📫 Reach me at <div id="badges">
   <a href="https://www.linkedin.com/in/shankar-k-888381ba/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
